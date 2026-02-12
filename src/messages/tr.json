@@ -1,0 +1,265 @@
+{
+  "common": {
+    "appName": "İş Başvuru Takip",
+    "search": "Ara",
+    "searchPlaceholder": "Şirket, pozisyon ara...",
+    "filter": "Filtrele",
+    "sort": "Sırala",
+    "clearFilters": "Filtreleri Temizle",
+    "noResults": "Başvuru bulunamadı",
+    "loading": "Yükleniyor...",
+    "save": "Kaydet",
+    "cancel": "İptal",
+    "delete": "Sil",
+    "edit": "Düzenle",
+    "view": "Görüntüle",
+    "add": "Ekle",
+    "remove": "Kaldır",
+    "confirm": "Onayla",
+    "back": "Geri",
+    "close": "Kapat",
+    "actions": "İşlemler",
+    "pin": "Sabitle",
+    "unpin": "Sabitlemeyi Kaldır",
+    "pinned": "Sabitlenmiş",
+    "all": "Tümü",
+    "apply": "Uygula",
+    "yes": "Evet",
+    "no": "Hayır",
+    "or": "veya",
+    "and": "ve",
+    "optional": "İsteğe bağlı",
+    "status": "Durum",
+    "clear": "Temizle",
+    "listView": "Liste Görünümü",
+    "kanbanView": "Kanban Görünümü"
+  },
+  "nav": {
+    "dashboard": "Panel",
+    "applications": "Başvurular",
+    "newApplication": "Yeni Başvuru",
+    "settings": "Ayarlar"
+  },
+  "application": {
+    "title": "Başvuru",
+    "applications": "Başvurular",
+    "newApplication": "Yeni Başvuru",
+    "editApplication": "Başvuruyu Düzenle",
+    "applicationDetails": "Başvuru Detayları",
+    "deleteConfirm": "Bu başvuruyu silmek istediğinize emin misiniz?",
+    "deleteSuccess": "Başvuru başarıyla silindi",
+    "saveSuccess": "Başvuru başarıyla kaydedildi",
+    "updateSuccess": "Başvuru başarıyla güncellendi",
+    "companyName": "Şirket Adı",
+    "companyLocation": "Şirket Lokasyonu",
+    "companyIndustry": "Şirket Sektörü",
+    "companySalaryRange": "Şirket Maaş Aralığı",
+    "position": "Pozisyon",
+    "skills": "Aranan Yetenekler",
+    "skillsHint": "Eklemek için Enter'a basın",
+    "applicationDate": "Başvuru Tarihi",
+    "coverLetter": "Ön Yazı",
+    "salaryExpectation": "Maaş Beklentisi",
+    "resume": "CV (PDF)",
+    "resumeHint": "Sadece PDF, en fazla 2 MB. Sonradan değiştirebilirsin.",
+    "resumeDrop": "PDF’yi buraya bırak ya da tıkla",
+    "resumeInvalidType": "Lütfen PDF dosyası yükle.",
+    "resumeTooLarge": "CV en fazla 2 MB olmalı.",
+    "resumeAttached": "Bu başvuruya bir CV eklenmiş.",
+    "resumeDownload": "CV’yi indir",
+    "advanced": "Gelişmiş alanlar",
+    "advancedHint": "Opsiyonel detaylar",
+    "contactsEmpty": "Henüz iletişim yok. Varsa ekleyebilirsin.",
+    "jobPostingUrl": "İlan Linki",
+    "jobPostingContent": "İlan İçeriği",
+    "source": "Başvuru Kaynağı",
+    "workType": "Çalışma Tipi",
+    "notes": "Notlar",
+    "contacts": "İletişim Kişileri",
+    "status": "Durum",
+    "changeStatus": "Durumu değiştir",
+    "createdAt": "Oluşturulma Tarihi",
+    "updatedAt": "Güncellenme Tarihi",
+    "addContact": "Kişi Ekle",
+    "contactName": "Kişi Adı",
+    "contactRole": "Rolü",
+    "contactEmail": "E-posta",
+    "contactPhone": "Telefon",
+    "contactLinkedIn": "LinkedIn",
+    "contactNotes": "Notlar",
+    "notFound": "Başvuru bulunamadı",
+    "companyDetails": "Şirket Detayları",
+    "jobPosting": "İlanı Görüntüle",
+    "addNoteTitle": "Not ekle",
+    "addNoteDescription": "Düzenleme sayfasına gitmeden hızlıca not düş.",
+    "addNotePlaceholder": "Bu başvuru için not ekle...",
+    "skillNoMatch": "Eşleşme yok. Eklemek için Enter."
+  },
+  "status": {
+    "applied": "Başvuruldu",
+    "test_case": "Test Case",
+    "hr_interview": "İK Mülakatı",
+    "technical_interview": "Teknik Mülakat",
+    "management_interview": "Yönetim Mülakatı",
+    "offer": "Teklif",
+    "accepted": "Kabul Edildi",
+    "rejected": "Reddedildi"
+  },
+  "workType": {
+    "remote": "Uzaktan",
+    "hybrid": "Hibrit",
+    "onsite": "Ofisten"
+  },
+  "sort": {
+    "applicationDate": "Başvuru Tarihi",
+    "companyName": "Şirket Adı",
+    "status": "Durum",
+    "createdAt": "Oluşturulma Tarihi",
+    "updatedAt": "Güncellenme Tarihi",
+    "asc": "Artan",
+    "desc": "Azalan"
+  },
+  "filter": {
+    "byStatus": "Duruma Göre",
+    "bySource": "Kaynağa Göre",
+    "byWorkType": "Çalışma Tipine Göre",
+    "byIndustry": "Sektöre Göre",
+    "byDateRange": "Tarih Aralığına Göre",
+    "showPinnedOnly": "Sadece Sabitlenenler",
+    "hideRejected": "Reddedilenleri Gizle",
+    "from": "Başlangıç",
+    "to": "Bitiş"
+  },
+  "settings": {
+    "title": "Ayarlar",
+    "appearance": "Görünüm",
+    "theme": "Tema",
+    "themeLight": "Açık",
+    "themeDark": "Koyu",
+    "themeSystem": "Sistem",
+    "language": "Dil",
+    "languageEn": "İngilizce",
+    "languageTr": "Türkçe",
+    "hideRejectedDescription": "Reddedilen başvuruları ana listeden gizle",
+    "customSources": "Özel Kaynaklar",
+    "customIndustries": "Özel Sektörler",
+    "addSource": "Kaynak Ekle",
+    "addIndustry": "Sektör Ekle",
+    "dataManagement": "Veri Yönetimi",
+    "exportData": "Veriyi Dışa Aktar",
+    "importData": "Veri İçe Aktar"
+  },
+  "dashboard": {
+    "welcome": "İş Başvuru Takip'e Hoş Geldiniz",
+    "subtitle": "İş başvurularınızı tek bir yerden takip edin ve yönetin",
+    "totalApplications": "Toplam Başvuru",
+    "pinnedApplications": "Sabitlenmiş",
+    "recentApplications": "Son Başvurular",
+    "quickStats": "Hızlı İstatistikler"
+  },
+  "empty": {
+    "title": "Henüz başvuru yok",
+    "description": "İlk başvurunuzu ekleyerek iş başvurularınızı takip etmeye başlayın.",
+    "action": "İlk Başvurunuzu Ekleyin"
+  },
+  "validation": {
+    "required": "Bu alan zorunludur",
+    "invalidUrl": "Lütfen geçerli bir URL girin",
+    "invalidEmail": "Lütfen geçerli bir e-posta girin",
+    "invalidDate": "Lütfen geçerli bir tarih girin"
+  },
+  "auth": {
+    "welcome": "Hoş Geldiniz",
+    "login": "Giriş Yap",
+    "register": "Kayıt Ol",
+    "logout": "Çıkış Yap",
+    "logoutSuccess": "Başarıyla çıkış yapıldı.",
+    "loginDescription": "İş başvurularınızı takip etmek için giriş yapın",
+    "loginSuccess": "Hoş geldin! Giriş yapıldı.",
+    "heroTitle": "İş Başvurularınızı Takip Edin",
+    "heroDescription": "Nereye başvurduğunuzu asla kaybetmeyin. İş aranızı düzenleyin, yönetin ve başarıya ulaşın.",
+    "email": "E-posta",
+    "password": "Şifre",
+    "forgotPassword": "Şifremi unuttum",
+    "resetPassword": "Şifre sıfırla",
+    "resetPasswordDescription": "Sana bir sıfırlama linki göndereceğiz.",
+    "resetPasswordSend": "Sıfırlama linki gönder",
+    "resetEmailSent": "Sıfırlama linki gönderildi. E-postanı kontrol et.",
+    "newPassword": "Yeni şifre",
+    "confirmPassword": "Şifreyi doğrula",
+    "passwordsDontMatch": "Şifreler eşleşmiyor",
+    "updatePassword": "Şifreyi güncelle",
+    "passwordUpdated": "Şifre başarıyla güncellendi.",
+    "resetMissingSession": "Sıfırlama bağlantısı geçersiz veya süresi dolmuş. Lütfen yeniden iste.",
+    "loginWithEmail": "E-posta ile Giriş Yap",
+    "createAccount": "Hesap Oluştur",
+    "orContinueWith": "Veya şunlarla devam et",
+    "continueWithGoogle": "Google ile Devam Et",
+    "continueWithGithub": "GitHub ile Devam Et",
+    "fillAllFields": "Lütfen tüm alanları doldurun",
+    "passwordMinLength": "Şifre en az 6 karakter olmalıdır",
+    "passwordHint": "En az 6 karakter",
+    "checkEmail": "Doğrulama linki için e-postanızı kontrol edin",
+    "preview": "İncele",
+    "previewTitle": "İş aramanızdaki karmaşayı önleyin",
+    "previewDesc": "Tablolar ve dağınık notlar arasında boğulmayı bırakın. Tüm iş başvurularınızı profesyonel bir panoda düzenleyin, takip edin ve yönetin."
+  },
+  "landing": {
+    "badge": "Başvurular Arasında Kaybolanlar İçin",
+    "title": "Her başvuruyu tüm detaylarıyla takip edin.",
+    "subtitle": "JobTrack, dağınık tabloları temiz bir panel, sürükle-bırak kanban ve CV ekleriyle değiştirir; bir sonraki adımı hep bilirsiniz.",
+    "ctaPrimary": "Hemen başla",
+    "ctaSecondary": "Nasıl çalışır",
+    "highlights": {
+      "pipeline": "8 aşamalı işe alım akışı",
+      "filters": "Gerçek zamanlı filtreler",
+      "theme": "Koyu + açık mod"
+    },
+    "heroAlt": "JobTrack panel ön izlemesi",
+    "preview": {
+      "tabs": {
+        "kanban": "Kanban",
+        "detail": "Detay"
+      },
+      "alts": {
+        "kanban": "Sürükle-bırak kartlarla kanban görünümü",
+        "detail": "CV ve zaman çizelgesi olan başvuru detay görünümü"
+      }
+    },
+    "features": {
+      "kanban": {
+        "title": "Kanban netliği",
+        "description": "Kartları aşamalar arasında sürükleyin, ilerlemeyi görünür tutun."
+      },
+      "notes": {
+        "title": "CV ekleri",
+        "description": "Her başvuruya gönderdiğin CV'yi ekle."
+      },
+      "insights": {
+        "title": "Akıllı içgörüler",
+        "description": "Temiz filtreleme ve sıralama ile süreci yakalayın."
+      },
+      "timeline": {
+        "title": "Zamanında kalın",
+        "description": "Süreci veya mülakat zaman çizelgelerini kaçırmayın."
+      }
+    },
+    "sections": {
+      "commandCenter": {
+        "title": "Tüm kontrol tek merkezde",
+        "description": "Durum, kaynak ya da çalışma tipine göre filtreleyin. Önemli başvuruları sabitleyin.",
+        "bullets": "Sabitlenmiş odak|Çok dilli|Responsive|Güvenli tasarım"
+      },
+      "dailyUse": {
+        "title": "Günlük kullanım için hızlı",
+        "description": "Güncellemeye daha az, mülakata daha çok zaman ayırın.",
+        "badges": "Supabase Auth|Gerçek zamanlı filtreler|Kanban modu|CV yükleme"
+      }
+    },
+    "ctaBottom": {
+      "title": "İş aramana düzen katmaya hazır mısın?",
+      "description": "Panelini oluştur ve dakikalar içinde takip etmeye başla.",
+      "button": "Hemen takip etmeye başla"
+    }
+  }
+}
