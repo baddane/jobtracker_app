@@ -20,7 +20,7 @@ import { siteConfig } from "@/config/site";
 import { createClient } from "@/lib/supabase/server";
 
 export const metadata: Metadata = {
-  title: "Job Application Tracker",
+  title: siteConfig.title,
   description: siteConfig.description,
   alternates: { canonical: "/" },
 
@@ -59,7 +59,7 @@ export default async function LandingPage() {
   return (
     <>
       <Script
-        id="jsonld-jobtrack"
+        id="jsonld-jobio"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />

@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
     default: siteConfig.title,
-    template: "%s | JobTrack",
+    template: "%s | Jobio",
   },
   description: siteConfig.description,
   keywords: siteConfig.keywords,

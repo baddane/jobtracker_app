@@ -208,7 +208,7 @@
   "landing": {
     "badge": "Başvurular Arasında Kaybolanlar İçin",
     "title": "Her başvuruyu tüm detaylarıyla takip edin.",
-    "subtitle": "JobTrack, dağınık tabloları temiz bir panel, sürükle-bırak kanban ve CV ekleriyle değiştirir; bir sonraki adımı hep bilirsiniz.",
+    "subtitle": "Jobio, dağınık tabloları temiz bir panel, sürükle-bırak kanban ve CV ekleriyle değiştirir; bir sonraki adımı hep bilirsiniz.",
     "ctaPrimary": "Hemen başla",
     "ctaSecondary": "Nasıl çalışır",
     "highlights": {
@@ -216,7 +216,7 @@
       "filters": "Gerçek zamanlı filtreler",
       "theme": "Koyu + açık mod"
     },
-    "heroAlt": "JobTrack panel ön izlemesi",
+    "heroAlt": "Jobio panel ön izlemesi",
     "preview": {
       "tabs": {
         "kanban": "Kanban",

@@ -6,7 +6,7 @@ import { WeeklyActivityChart } from "@/components/analytics/WeeklyActivityChart"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Analytics | JobTrack",
+  title: "Analytics | Jobio",
   description: "View insights about your job search progress",
 };
 

@@ -9,7 +9,7 @@ export function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           {/* Copyright */}
           <p className="text-sm text-muted-foreground">
-            © {currentYear} JobTrack
+            © {currentYear} Jobio
           </p>
 
         </div>

@@ -47,7 +47,7 @@ export default function ProductShowcase() {
               <div className="block dark:hidden relative w-full h-full">
                 <Image
                   src="/dashboard-preview_light.png"
-                  alt="JobTrack Dashboard Light Mode"
+                  alt="Jobio Dashboard Light Mode"
                   fill
                   className="object-cover object-top"
                   priority
@@ -59,7 +59,7 @@ export default function ProductShowcase() {
               <div className="hidden dark:block relative w-full h-full">
                 <Image
                   src="/dashboard-preview_dark.png"
-                  alt="JobTrack Dashboard Dark Mode"
+                  alt="Jobio Dashboard Dark Mode"
                   fill
                   className="object-cover object-top"
                   priority

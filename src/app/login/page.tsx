@@ -170,11 +170,11 @@ export default function LoginPage() {
           <div className="absolute inset-0 bg-black/30" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-            <div className="flex items-center gap-3 mb-3">
+              <div className="flex items-center gap-3 mb-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/20 backdrop-blur">
                 <Briefcase className="h-5 w-5" />
               </div>
-              <span className="font-bold text-xl">JobTrack</span>
+              <span className="font-bold text-xl">Jobio</span>
             </div>
             <h2 className="text-2xl font-bold mb-1">{t("heroTitle")}</h2>
             <p className="text-white/90 text-base max-w-md">
@@ -191,7 +191,7 @@ export default function LoginPage() {
                 <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary">
                   <Briefcase className="h-5 w-5 text-primary-foreground" />
                 </div>
-                <span className="font-bold text-lg">JobTrack</span>
+                <span className="font-bold text-lg">Jobio</span>
               </div>
               <CardTitle className="text-2xl">{t("welcome")}</CardTitle>
               <CardDescription>{t("loginDescription")}</CardDescription>

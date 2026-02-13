@@ -401,14 +401,14 @@ export default function SettingsPage() {
         {/* About Section */}
         <Card>
           <CardHeader>
-            <CardTitle>About JobTrack</CardTitle>
+            <CardTitle>About Jobio</CardTitle>
             <CardDescription>
               A modern job application tracking tool
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
             <p className="text-sm text-muted-foreground">
-              JobTrack helps you organize and track your job applications in one
+              Jobio helps you organize and track your job applications in one
               place. Built with Next.js, Supabase, and shadcn/ui.
             </p>
             <div className="flex flex-wrap gap-3">

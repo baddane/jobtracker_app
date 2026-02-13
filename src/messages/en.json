@@ -208,7 +208,7 @@
   "landing": {
     "badge": "Built for every job seeker",
     "title": "Track every application with total clarity.",
-    "subtitle": "JobTrack replaces messy spreadsheets with a powerful dashboard. Track your interview funnel, manage resumes, and get real-time insights into your job search.",
+    "subtitle": "Jobio replaces messy spreadsheets with a powerful dashboard. Track your interview funnel, manage resumes, and get real-time insights into your job search.",
     "ctaPrimary": "Start Now",
     "ctaSecondary": "See how it works",
     "highlights": {
@@ -216,7 +216,7 @@
       "filters": "Resume Management",
       "theme": "Dark + light mode"
     },
-    "heroAlt": "JobTrack dashboard preview",
+    "heroAlt": "Jobio dashboard preview",
     "preview": {
       "tabs": {
         "kanban": "Kanban & Lists",
@@ -264,7 +264,7 @@
     },
     "ctaBottom": {
       "title": "Ready to land your next role?",
-      "description": "Join other developers who organize their job search with JobTrack.",
+      "description": "Join other developers who organize their job search with Jobio.",
       "button": "Start tracking now"
     }
   }

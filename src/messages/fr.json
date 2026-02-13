@@ -208,7 +208,7 @@
   "landing": {
     "badge": "Conçu pour tout chercheur d'emploi",
     "title": "Suivez chaque candidature avec clarté.",
-    "subtitle": "JobTrack remplace les tableaux désordonnés par un tableau de bord puissant. Suivez votre entonnoir d'entretien, gérez les CV et obtenez des insights en temps réel.",
+    "subtitle": "Jobio remplace les tableaux désordonnés par un tableau de bord puissant. Suivez votre entonnoir d'entretien, gérez les CV et obtenez des insights en temps réel.",
     "ctaPrimary": "Commencer",
     "ctaSecondary": "Comment ça marche",
     "highlights": {
@@ -216,7 +216,7 @@
       "filters": "Filtres en temps réel",
       "theme": "Mode clair + sombre"
     },
-    "heroAlt": "Aperçu du tableau de bord JobTrack",
+    "heroAlt": "Aperçu du tableau de bord Jobio",
     "preview": {
       "tabs": {
         "kanban": "Kanban",
@@ -259,7 +259,7 @@
     },
     "ctaBottom": {
       "title": "Prêt à décrocher votre prochain poste ?",
-      "description": "Rejoignez d'autres développeurs qui organisent leur recherche d'emploi avec JobTrack.",
+      "description": "Rejoignez d'autres développeurs qui organisent leur recherche d'emploi avec Jobio.",
       "button": "Commencer le suivi"
     }
   }

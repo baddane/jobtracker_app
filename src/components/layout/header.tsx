@@ -44,10 +44,10 @@ export function Header() {
           </div>
           <div className="hidden sm:flex flex-col">
             <span className="font-bold text-base leading-tight tracking-tight">
-              JobTrack
+              Jobio
             </span>
             <span className="text-[10px] text-muted-foreground leading-tight">
-              Job Application Manager
+              Gérez vos candidatures en un clic
             </span>
           </div>
         </Link>
