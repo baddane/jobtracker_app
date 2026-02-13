@@ -1,6 +1,6 @@
 {
   "common": {
-    "appName": "İş Başvuru Takip",
+    "appName": "Jobio",
     "search": "Ara",
     "searchPlaceholder": "Şirket, pozisyon ara...",
     "filter": "Filtrele",
@@ -151,7 +151,7 @@
     "importData": "Veri İçe Aktar"
   },
   "dashboard": {
-    "welcome": "İş Başvuru Takip'e Hoş Geldiniz",
+    "welcome": "Jobio'ya Hoş Geldiniz",
     "subtitle": "İş başvurularınızı tek bir yerden takip edin ve yönetin",
     "totalApplications": "Toplam Başvuru",
     "pinnedApplications": "Sabitlenmiş",

@@ -1,6 +1,6 @@
 {
   "common": {
-    "appName": "Job Apply Track",
+    "appName": "Jobio",
     "search": "Search",
     "searchPlaceholder": "Search companies, positions...",
     "filter": "Filter",
@@ -151,7 +151,7 @@
     "importData": "Import Data"
   },
   "dashboard": {
-    "welcome": "Welcome to Job Apply Track",
+    "welcome": "Welcome to Jobio",
     "subtitle": "Track and manage your job applications in one place",
     "totalApplications": "Total Applications",
     "pinnedApplications": "Pinned",

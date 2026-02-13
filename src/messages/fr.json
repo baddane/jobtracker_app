@@ -1,6 +1,6 @@
 {
   "common": {
-    "appName": "Job Apply Track",
+    "appName": "Jobio",
     "search": "Rechercher",
     "searchPlaceholder": "Rechercher entreprises, postes...",
     "filter": "Filtrer",
@@ -151,8 +151,8 @@
     "importData": "Importer les données"
   },
   "dashboard": {
-    "welcome": "Bienvenue sur Job Apply Track",
-    "subtitle": "Suivez et gérez vos candidatures en un seul endroit",
+    "welcome": "Bienvenue sur Jobio",
+    "subtitle": "Gérez vos candidatures en un clic",
     "totalApplications": "Total des candidatures",
     "pinnedApplications": "Épinglées",
     "recentApplications": "Candidatures récentes",
