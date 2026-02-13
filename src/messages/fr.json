@@ -1,0 +1,266 @@
+{
+  "common": {
+    "appName": "Job Apply Track",
+    "search": "Rechercher",
+    "searchPlaceholder": "Rechercher entreprises, postes...",
+    "filter": "Filtrer",
+    "sort": "Trier",
+    "clearFilters": "Effacer les filtres",
+    "noResults": "Aucune candidature trouvée",
+    "loading": "Chargement...",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "view": "Afficher",
+    "add": "Ajouter",
+    "remove": "Retirer",
+    "confirm": "Confirmer",
+    "back": "Retour",
+    "close": "Fermer",
+    "actions": "Actions",
+    "pin": "Épingler",
+    "unpin": "Désépingler",
+    "pinned": "Épinglé",
+    "all": "Tout",
+    "apply": "Postuler",
+    "yes": "Oui",
+    "no": "Non",
+    "or": "ou",
+    "and": "et",
+    "optional": "Optionnel",
+    "status": "Statut",
+    "clear": "Effacer",
+    "listView": "Vue Liste",
+    "kanbanView": "Vue Kanban"
+  },
+  "nav": {
+    "dashboard": "Tableau de bord",
+    "applications": "Candidatures",
+    "newApplication": "Nouvelle candidature",
+    "settings": "Paramètres"
+  },
+  "application": {
+    "title": "Candidature",
+    "applications": "Candidatures",
+    "newApplication": "Nouvelle candidature",
+    "editApplication": "Modifier la candidature",
+    "applicationDetails": "Détails de la candidature",
+    "deleteConfirm": "Voulez-vous vraiment supprimer cette candidature ?",
+    "deleteSuccess": "Candidature supprimée avec succès",
+    "saveSuccess": "Candidature enregistrée avec succès",
+    "updateSuccess": "Candidature mise à jour avec succès",
+    "companyName": "Nom de l'entreprise",
+    "companyLocation": "Localisation de l'entreprise",
+    "companyIndustry": "Secteur",
+    "companySalaryRange": "Fourchette salariale",
+    "position": "Poste",
+    "skills": "Compétences requises",
+    "skillsHint": "Appuyez sur Entrée pour ajouter une compétence",
+    "applicationDate": "Date de candidature",
+    "coverLetter": "Lettre de motivation",
+    "salaryExpectation": "Attentes salariales",
+    "resume": "CV (PDF)",
+    "resumeHint": "PDF seulement, jusqu'à 2 Mo. Vous pouvez le remplacer plus tard.",
+    "resumeDrop": "Glissez-déposez votre PDF ou cliquez pour télécharger",
+    "resumeInvalidType": "Veuillez télécharger un fichier PDF.",
+    "resumeTooLarge": "Le CV doit faire 2 Mo maximum.",
+    "resumeAttached": "Un CV est déjà attaché.",
+    "resumeDownload": "Télécharger le CV",
+    "advanced": "Champs avancés",
+    "advancedHint": "Détails optionnels",
+    "contactsEmpty": "Aucun contact pour le moment. Ajoutez-en si vous en avez.",
+    "jobPostingUrl": "URL de l'offre",
+    "jobPostingContent": "Contenu de l'offre",
+    "source": "Source",
+    "workType": "Type de travail",
+    "notes": "Notes",
+    "contacts": "Contacts",
+    "status": "Statut",
+    "changeStatus": "Changer le statut",
+    "createdAt": "Créé le",
+    "updatedAt": "Mis à jour le",
+    "addContact": "Ajouter un contact",
+    "contactName": "Nom du contact",
+    "contactRole": "Rôle",
+    "contactEmail": "E-mail",
+    "contactPhone": "Téléphone",
+    "contactLinkedIn": "LinkedIn",
+    "contactNotes": "Notes",
+    "notFound": "Candidature introuvable",
+    "companyDetails": "Détails de l'entreprise",
+    "jobPosting": "Voir l'annonce",
+    "addNoteTitle": "Ajouter une note",
+    "addNoteDescription": "Ajoutez rapidement du contexte sans ouvrir le formulaire d'édition.",
+    "addNotePlaceholder": "Ajouter une note sur cette candidature...",
+    "skillNoMatch": "Aucune correspondance. Appuyez sur Entrée pour ajouter."
+  },
+  "status": {
+    "applied": "Candidature envoyée",
+    "test_case": "Test technique",
+    "hr_interview": "Entretien RH",
+    "technical_interview": "Entretien technique",
+    "management_interview": "Entretien direction",
+    "offer": "Offre",
+    "accepted": "Accepté",
+    "rejected": "Rejeté"
+  },
+  "workType": {
+    "remote": "À distance",
+    "hybrid": "Hybride",
+    "onsite": "Sur site"
+  },
+  "sort": {
+    "applicationDate": "Date de candidature",
+    "companyName": "Nom de l'entreprise",
+    "status": "Statut",
+    "createdAt": "Date de création",
+    "updatedAt": "Date de mise à jour",
+    "asc": "Croissant",
+    "desc": "Décroissant"
+  },
+  "filter": {
+    "byStatus": "Par statut",
+    "bySource": "Par source",
+    "byWorkType": "Par type de travail",
+    "byIndustry": "Par secteur",
+    "byDateRange": "Par période",
+    "showPinnedOnly": "Afficher uniquement les épinglés",
+    "hideRejected": "Masquer les refusés",
+    "from": "De",
+    "to": "À"
+  },
+  "settings": {
+    "title": "Paramètres",
+    "appearance": "Apparence",
+    "theme": "Thème",
+    "themeLight": "Clair",
+    "themeDark": "Sombre",
+    "themeSystem": "Système",
+    "language": "Langue",
+    "languageEn": "Anglais",
+    "languageTr": "Turc",
+    "languageFr": "Français",
+    "hideRejectedDescription": "Masquer les candidatures refusées depuis la liste principale",
+    "customSources": "Sources personnalisées",
+    "customIndustries": "Secteurs personnalisés",
+    "addSource": "Ajouter une source",
+    "addIndustry": "Ajouter un secteur",
+    "dataManagement": "Gestion des données",
+    "exportData": "Exporter les données",
+    "importData": "Importer les données"
+  },
+  "dashboard": {
+    "welcome": "Bienvenue sur Job Apply Track",
+    "subtitle": "Suivez et gérez vos candidatures en un seul endroit",
+    "totalApplications": "Total des candidatures",
+    "pinnedApplications": "Épinglées",
+    "recentApplications": "Candidatures récentes",
+    "quickStats": "Statistiques rapides"
+  },
+  "empty": {
+    "title": "Aucune candidature pour le moment",
+    "description": "Commencez à suivre vos candidatures en ajoutant la première.",
+    "action": "Ajoutez votre première candidature"
+  },
+  "validation": {
+    "required": "Ce champ est requis",
+    "invalidUrl": "Veuillez entrer une URL valide",
+    "invalidEmail": "Veuillez entrer une adresse e-mail valide",
+    "invalidDate": "Veuillez entrer une date valide"
+  },
+  "auth": {
+    "welcome": "Bienvenue",
+    "login": "Se connecter",
+    "register": "S'inscrire",
+    "logout": "Se déconnecter",
+    "logoutSuccess": "Déconnexion réussie.",
+    "loginDescription": "Connectez-vous pour suivre vos candidatures",
+    "loginSuccess": "Content de vous revoir ! Vous êtes connecté.",
+    "heroTitle": "Suivez vos candidatures",
+    "heroDescription": "Ne perdez jamais la trace des endroits où vous avez postulé. Organisez, gérez et réussissez votre recherche d'emploi.",
+    "email": "E-mail",
+    "password": "Mot de passe",
+    "forgotPassword": "Mot de passe oublié ?",
+    "resetPassword": "Réinitialiser le mot de passe",
+    "resetPasswordDescription": "Nous vous enverrons un lien de réinitialisation.",
+    "resetPasswordSend": "Envoyer le lien",
+    "resetEmailSent": "Lien de réinitialisation envoyé. Vérifiez votre boîte mail.",
+    "newPassword": "Nouveau mot de passe",
+    "confirmPassword": "Confirmer le mot de passe",
+    "passwordsDontMatch": "Les mots de passe ne correspondent pas",
+    "updatePassword": "Mettre à jour le mot de passe",
+    "passwordUpdated": "Mot de passe mis à jour avec succès.",
+    "resetMissingSession": "Votre lien de réinitialisation est invalide ou expiré. Veuillez en demander un nouveau.",
+    "loginWithEmail": "Se connecter avec l'e-mail",
+    "createAccount": "Créer un compte",
+    "orContinueWith": "Ou continuer avec",
+    "continueWithGoogle": "Continuer avec Google",
+    "continueWithGithub": "Continuer avec GitHub",
+    "fillAllFields": "Veuillez remplir tous les champs",
+    "passwordMinLength": "Le mot de passe doit contenir au moins 6 caractères",
+    "passwordHint": "Minimum 6 caractères",
+    "checkEmail": "Vérifiez votre e-mail pour le lien de confirmation",
+    "preview": "Aperçu",
+    "previewTitle": "Mettez de l'ordre dans votre recherche d'emploi",
+    "previewDesc": "Arrêtez de vous noyer dans des tableaux et des notes dispersées. Organisez, suivez et gérez toutes vos candidatures dans un tableau de bord professionnel."
+  },
+  "landing": {
+    "badge": "Conçu pour tout chercheur d'emploi",
+    "title": "Suivez chaque candidature avec clarté.",
+    "subtitle": "JobTrack remplace les tableaux désordonnés par un tableau de bord puissant. Suivez votre entonnoir d'entretien, gérez les CV et obtenez des insights en temps réel.",
+    "ctaPrimary": "Commencer",
+    "ctaSecondary": "Comment ça marche",
+    "highlights": {
+      "pipeline": "Entonnoir en 8 étapes",
+      "filters": "Filtres en temps réel",
+      "theme": "Mode clair + sombre"
+    },
+    "heroAlt": "Aperçu du tableau de bord JobTrack",
+    "preview": {
+      "tabs": {
+        "kanban": "Kanban",
+        "detail": "Détail"
+      },
+      "alts": {
+        "kanban": "Vue Kanban avec cartes glissantes",
+        "detail": "Vue détail avec CV et chronologie"
+      }
+    },
+    "features": {
+      "kanban": {
+        "title": "Clarté Kanban",
+        "description": "Faites glisser les cartes entre les étapes pour visualiser la progression."
+      },
+      "notes": {
+        "title": "Gestion des CV",
+        "description": "Téléchargez et épinglez le CV envoyé pour chaque candidature."
+      },
+      "insights": {
+        "title": "Tableau de bord d'analytics",
+        "description": "Suivez votre taux de réponse et voyez les tendances hebdomadaires."
+      },
+      "timeline": {
+        "title": "Chronologie & Notes",
+        "description": "Consignez chaque contact, négociation salariale et date de suivi."
+      }
+    },
+    "sections": {
+      "commandCenter": {
+        "title": "Tout centralisé",
+        "description": "Filtrez par statut, source ou type de travail. Épinglez les candidatures importantes.",
+        "bullets": "Focalisation épinglée|Multilingue|Responsive|Conception sécurisée"
+      },
+      "dailyUse": {
+        "title": "Conçu pour l'usage quotidien",
+        "description": "Passez moins de temps à mettre à jour et plus de temps en entretien.",
+        "badges": "Supabase Auth|Filtres temps réel|Mode Kanban|Téléversement de CV"
+      }
+    },
+    "ctaBottom": {
+      "title": "Prêt à décrocher votre prochain poste ?",
+      "description": "Rejoignez d'autres développeurs qui organisent leur recherche d'emploi avec JobTrack.",
+      "button": "Commencer le suivi"
+    }
+  }
+}

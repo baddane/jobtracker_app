@@ -100,7 +100,7 @@ export interface SortOptions {
 // Settings
 export interface AppSettings {
   theme: "light" | "dark" | "system";
-  language: "en" | "tr";
+  language: "en" | "fr";
   customSources: string[];
   customIndustries: string[];
 }

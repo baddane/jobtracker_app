@@ -13,7 +13,7 @@ import { useRouter } from "next/navigation";
 
 const languages = [
   { code: "en", label: "English", flag: "🇬🇧" },
-  { code: "tr", label: "Türkçe", flag: "🇹🇷" },
+  { code: "fr", label: "Français", flag: "🇫🇷" },
 ];
 
 export function LanguageSwitcher() {

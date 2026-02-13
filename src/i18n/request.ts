@@ -3,11 +3,11 @@ import { cookies } from "next/headers";
 
 export default getRequestConfig(async () => {
   const cookieStore = await cookies();
-  const locale = cookieStore.get("locale")?.value || "en";
+  const locale = cookieStore.get("locale")?.value || "fr";
 
   const messages =
-    locale === "tr"
-      ? (await import("@/messages/tr.json")).default
+    locale === "fr"
+      ? (await import("@/messages/fr.json")).default
       : (await import("@/messages/en.json")).default;
 
   return {

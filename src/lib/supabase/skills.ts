@@ -9,7 +9,7 @@ const escapeForIlike = (value: string) =>
 
 export async function fetchSkillSuggestions(
   query: string,
-  locale: "en" | "tr",
+  locale: "en" | "fr",
   limit = 8
 ): Promise<SkillSuggestion[]> {
   if (!query.trim()) return [];

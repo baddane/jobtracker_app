@@ -264,7 +264,7 @@ export function ApplicationForm({
     }
     setIsSkillLoading(true);
     const handler = setTimeout(async () => {
-      const results = await fetchSkillSuggestions(query, locale === "tr" ? "tr" : "en");
+      const results = await fetchSkillSuggestions(query, locale === "fr" ? "fr" : "en");
       const labels = results.map((item) => item.label);
       setSkillSuggestions(labels.filter((item) => !watchSkills.includes(item)));
       setIsSkillLoading(false);

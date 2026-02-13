@@ -60,7 +60,7 @@ export default function SettingsPage() {
   const [newSource, setNewSource] = useState("");
   const [newIndustry, setNewIndustry] = useState("");
   const [showClearDialog, setShowClearDialog] = useState(false);
-  const [pendingLocale, setPendingLocale] = useState<"en" | "tr" | null>(null);
+  const [pendingLocale, setPendingLocale] = useState<"en" | "fr" | null>(null);
 
   useEffect(() => {
     if (!pendingLocale) return;
@@ -68,7 +68,7 @@ export default function SettingsPage() {
     router.refresh();
   }, [pendingLocale, router]);
 
-  const handleLanguageChange = (locale: "en" | "tr") => {
+  const handleLanguageChange = (locale: "en" | "fr") => {
     updateSettings({ language: locale });
     setPendingLocale(locale);
   };
@@ -153,7 +153,7 @@ export default function SettingsPage() {
 
   const languages = [
     { value: "en", label: t("settings.languageEn"), flag: "🇬🇧" },
-    { value: "tr", label: t("settings.languageTr"), flag: "🇹🇷" },
+    { value: "fr", label: t("settings.languageFr"), flag: "🇫🇷" },
   ];
 
   return (
@@ -208,7 +208,7 @@ export default function SettingsPage() {
                     }
                     className="justify-start"
                     onClick={() =>
-                      handleLanguageChange(lang.value as "en" | "tr")
+                      handleLanguageChange(lang.value as "en" | "fr")
                     }
                   >
                     <span className="mr-2">{lang.flag}</span>
