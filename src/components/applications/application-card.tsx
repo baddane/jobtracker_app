@@ -81,7 +81,7 @@ export function ApplicationCard({ application }: ApplicationCardProps) {
         {/* Pin button - visible on hover or when pinned */}
         <button
           className={cn(
-            "absolute -top-2 -right-2 z-10 rounded-full p-1.5 transition-all duration-200 cursor-pointer",
+            "absolute -top-2 -right-2 z-10 rounded-full p-2 transition-all duration-200 cursor-pointer",
             application.isPinned
               ? "bg-primary text-primary-foreground opacity-100"
               : "bg-muted text-muted-foreground opacity-0 group-hover:opacity-100 hover:bg-primary hover:text-primary-foreground"
@@ -155,7 +155,7 @@ export function ApplicationCard({ application }: ApplicationCardProps) {
                     }
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-muted-foreground hover:text-primary transition-colors p-1"
+                    className="text-muted-foreground hover:text-primary transition-colors p-2"
                     onClick={(e) => e.stopPropagation()}
                   >
                     <ExternalLink className="h-4 w-4" />
@@ -166,7 +166,7 @@ export function ApplicationCard({ application }: ApplicationCardProps) {
                     asChild
                     onClick={(e) => e.stopPropagation()}
                   >
-                    <Button variant="ghost" size="icon" className="h-8 w-8">
+                    <Button variant="ghost" size="icon" className="h-9 w-9">
                       <MoreHorizontal className="h-4 w-4" />
                     </Button>
                   </DropdownMenuTrigger>

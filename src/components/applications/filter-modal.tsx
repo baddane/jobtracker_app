@@ -208,7 +208,7 @@ export function FilterModal() {
             <Separator />
 
             {/* Source & Industry side by side */}
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
               {/* Source */}
               <div className="space-y-3">
                 <Label className="text-sm font-medium">

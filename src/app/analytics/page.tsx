@@ -27,12 +27,12 @@ export default async function AnalyticsPage() {
 
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-7">
         {/* Weekly Activity - Takes up 4 columns on large screens */}
-        <div className="col-span-4">
+        <div className="md:col-span-1 lg:col-span-4">
           <WeeklyActivityChart data={data.weeklyActivity} />
         </div>
 
         {/* Status Distribution - Takes up 3 columns */}
-        <div className="col-span-3">
+        <div className="md:col-span-1 lg:col-span-3">
           <StatusPieChart
             title="Application Status"
             data={data.statusDistribution}
@@ -42,7 +42,7 @@ export default async function AnalyticsPage() {
 
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-7">
         {/* Work Type Distribution - Takes up 3 columns */}
-        <div className="col-span-3">
+        <div className="md:col-span-1 lg:col-span-3">
           <StatusPieChart
             title="Work Type Preference"
             data={data.workTypeDistribution}
@@ -50,7 +50,7 @@ export default async function AnalyticsPage() {
         </div>
 
         {/* Placeholder for future insights or another chart */}
-        <Card className="col-span-4">
+        <Card className="md:col-span-1 lg:col-span-4">
           <CardHeader>
             <CardTitle>Insights (Coming Soon)</CardTitle>
           </CardHeader>

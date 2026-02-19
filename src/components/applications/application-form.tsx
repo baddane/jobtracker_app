@@ -534,7 +534,7 @@ export function ApplicationForm({
                 <Label htmlFor="salaryExpectation">
                   {t("application.salaryExpectation")} ({t("common.optional")})
                 </Label>
-                <div className="grid grid-cols-[96px_minmax(0,1fr)_minmax(0,1fr)] gap-2">
+                <div className="grid grid-cols-1 sm:grid-cols-[96px_minmax(0,1fr)_minmax(0,1fr)] gap-2">
                   <Select
                     value={salaryExpectationCurrency}
                     onValueChange={setSalaryExpectationCurrency}
