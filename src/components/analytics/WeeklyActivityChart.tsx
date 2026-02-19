@@ -10,16 +10,19 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
+import { useTranslations } from "next-intl";
 
 interface WeeklyActivityChartProps {
   data: { name: string; applications: number }[];
 }
 
 export function WeeklyActivityChart({ data }: WeeklyActivityChartProps) {
+  const t = useTranslations("analytics");
+
   return (
     <Card className="col-span-1 md:col-span-2">
       <CardHeader>
-        <CardTitle>Weekly Activity</CardTitle>
+        <CardTitle>{t("weeklyActivity")}</CardTitle>
       </CardHeader>
       <CardContent>
         <div className="h-[300px] w-full">

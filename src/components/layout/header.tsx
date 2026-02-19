@@ -9,10 +9,12 @@ import { LanguageSwitcher } from "./language-switcher";
 import { LogoutButton } from "./logout-button";
 import { Button } from "@/components/ui/button";
 import { createClient } from "@/lib/supabase/client";
+import { useTranslations } from "next-intl";
 
 export function Header() {
   const pathname = usePathname();
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const t = useTranslations();
 
   useEffect(() => {
     const supabase = createClient();
@@ -47,7 +49,7 @@ export function Header() {
               Jobio
             </span>
             <span className="text-[10px] text-muted-foreground leading-tight">
-              Gérez vos candidatures en un clic
+              {t("dashboard.subtitle")}
             </span>
           </div>
         </Link>
@@ -64,7 +66,7 @@ export function Header() {
                   }
                   size="icon"
                   className="h-9 w-9"
-                  aria-label="Dashboard"
+                  aria-label={t("nav.dashboard")}
                 >
                   <LayoutGrid className="h-4 w-4" />
                 </Button>
@@ -76,7 +78,7 @@ export function Header() {
                   }
                   size="icon"
                   className="h-9 w-9"
-                  aria-label="Analytics"
+                  aria-label={t("nav.analytics")}
                 >
                   <PieChart className="h-4 w-4" />
                 </Button>
@@ -86,6 +88,7 @@ export function Header() {
                   variant={pathname === "/settings" ? "secondary" : "ghost"}
                   size="icon"
                   className="h-9 w-9"
+                  aria-label={t("nav.settings")}
                 >
                   <Settings className="h-4 w-4" />
                 </Button>
@@ -95,7 +98,7 @@ export function Header() {
           ) : (
             <Link href="/login">
               <Button variant="outline" size="sm">
-                Sign in
+                {t("header.signIn")}
               </Button>
             </Link>
           )}

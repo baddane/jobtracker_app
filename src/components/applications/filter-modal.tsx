@@ -118,7 +118,7 @@ export function FilterModal() {
         <DialogHeader>
           <DialogTitle>{t("common.filter")}</DialogTitle>
           <DialogDescription>
-            Filter your applications by various criteria
+            {t("filter.description")}
           </DialogDescription>
         </DialogHeader>
 

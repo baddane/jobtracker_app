@@ -13,7 +13,7 @@ export function MobileNav() {
 
   const navItems = [
     { href: "/", label: t("dashboard"), icon: LayoutDashboard },
-    { href: "/analytics", label: "Analytics", icon: PieChart },
+    { href: "/analytics", label: t("analytics"), icon: PieChart },
     { href: "/applications/new", label: t("newApplication"), icon: Plus },
     { href: "/settings", label: t("settings"), icon: Settings },
   ];
