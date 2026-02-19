@@ -37,8 +37,13 @@
   "nav": {
     "dashboard": "Dashboard",
     "applications": "Applications",
+    "analytics": "Analytics",
     "newApplication": "New Application",
     "settings": "Settings"
+  },
+  "header": {
+    "changeLanguage": "Change language",
+    "signIn": "Sign in"
   },
   "application": {
     "title": "Application",
@@ -93,7 +98,31 @@
     "addNoteTitle": "Add a note",
     "addNoteDescription": "Quickly jot down context without opening the edit form.",
     "addNotePlaceholder": "Add a note about this application...",
-    "skillNoMatch": "No match found. Press Enter to add."
+    "skillNoMatch": "No match found. Press Enter to add.",
+    "formSubtitleEdit": "Update the application details",
+    "formSubtitleNew": "Track a new job application",
+    "sectionCompany": "Company Information",
+    "sectionPosition": "Position Details",
+    "placeholderCompany": "e.g., Google",
+    "placeholderLocation": "e.g., San Francisco, CA",
+    "placeholderSelectIndustry": "Select industry",
+    "placeholderJobUrl": "linkedin.com/jobs/...",
+    "placeholderPosition": "e.g., Senior Frontend Engineer",
+    "placeholderCurrency": "Currency",
+    "placeholderAmount": "Amount",
+    "placeholderPickDate": "Pick a date",
+    "placeholderSelectWorkType": "Select work type",
+    "placeholderSelectSource": "Select source",
+    "placeholderNotes": "Any additional notes about this application...",
+    "placeholderCoverLetter": "Paste your cover letter here...",
+    "contact": "Contact",
+    "placeholderContactName": "e.g., John Doe",
+    "placeholderContactRole": "e.g., Recruiter",
+    "placeholderContactEmail": "email@example.com",
+    "placeholderContactPhone": "+1 234 567 8900",
+    "placeholderContactLinkedin": "https://linkedin.com/in/...",
+    "placeholderContactNotes": "Any notes about this contact...",
+    "backToList": "Back to Applications"
   },
   "status": {
     "applied": "Applied",
@@ -128,7 +157,8 @@
     "showPinnedOnly": "Show Pinned Only",
     "hideRejected": "Hide Rejected",
     "from": "From",
-    "to": "To"
+    "to": "To",
+    "description": "Filter your applications by various criteria"
   },
   "settings": {
     "title": "Settings",
@@ -139,7 +169,6 @@
     "themeSystem": "System",
     "language": "Language",
     "languageEn": "English",
-    "languageTr": "Turkish",
     "languageFr": "French",
     "hideRejectedDescription": "Hide rejected applications from the main list",
     "customSources": "Custom Sources",
@@ -148,7 +177,47 @@
     "addIndustry": "Add Industry",
     "dataManagement": "Data Management",
     "exportData": "Export Data",
-    "importData": "Import Data"
+    "importData": "Import Data",
+    "managePreferences": "Manage your application preferences",
+    "customizeAppearance": "Customize how the app looks",
+    "customSourcesDesc": "Add custom job sources for your applications",
+    "customIndustriesDesc": "Add custom industries for company categorization",
+    "dataManagementDesc": "Export, import, or clear your data",
+    "clearAllData": "Clear All Data",
+    "clearAllDataWarning": "This will permanently delete all your applications and settings.",
+    "clearAllDataConfirm": "Are you sure you want to delete all your applications and settings? This action cannot be undone.",
+    "sourceAdded": "Source added",
+    "sourceRemoved": "Source removed",
+    "industryAdded": "Industry added",
+    "industryRemoved": "Industry removed",
+    "dataExported": "Data exported successfully",
+    "dataImported": "Data imported successfully",
+    "dataCleared": "All data cleared",
+    "invalidBackup": "Invalid backup file",
+    "failedParse": "Failed to parse backup file",
+    "sourcePlaceholder": "e.g., AngelList, Hacker News",
+    "industryPlaceholder": "e.g., Blockchain, AI/ML",
+    "aboutTitle": "About Jobio",
+    "aboutDescription": "A modern job application tracking tool",
+    "aboutText": "Jobio helps you organize and track your job applications in one place. Built with Next.js, Supabase, and shadcn/ui."
+  },
+  "analytics": {
+    "dashboard": "Analytics Dashboard",
+    "applicationStatus": "Application Status",
+    "workTypePreference": "Work Type Preference",
+    "insightsTitle": "Insights (Coming Soon)",
+    "insightsDescription": "More detailed insights about your interview performance and improved salary trends will appear here.",
+    "totalApplications": "Total Applications",
+    "allTime": "All time applications",
+    "interviews": "Interviews",
+    "technicalHrInterviews": "Technical & HR interviews",
+    "offers": "Offers",
+    "receivedOffers": "Received offers",
+    "responseRate": "Response Rate",
+    "interviewOfferRatio": "Interview/Offer ratio",
+    "weeklyActivity": "Weekly Activity",
+    "noData": "No data available",
+    "applications": "Applications"
   },
   "dashboard": {
     "welcome": "Welcome to Jobio",
@@ -203,7 +272,7 @@
     "checkEmail": "Check your email for confirmation link",
     "preview": "Preview",
     "previewTitle": "Tame the chaos of your job search",
-    "previewDesc": "Stop drowning in spreadsheets and scattered notes. Organize, track,and manage all your job applications in one professional dashboard."
+    "previewDesc": "Stop drowning in spreadsheets and scattered notes. Organize, track, and manage all your job applications in one professional dashboard."
   },
   "landing": {
     "badge": "Built for every job seeker",

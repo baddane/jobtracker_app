@@ -9,6 +9,7 @@ import {
   Tooltip,
   Legend,
 } from "recharts";
+import { useTranslations } from "next-intl";
 
 interface StatusPieChartProps {
   title: string;
@@ -16,6 +17,8 @@ interface StatusPieChartProps {
 }
 
 export function StatusPieChart({ title, data }: StatusPieChartProps) {
+  const t = useTranslations("analytics");
+
   if (data.length === 0) {
     return (
       <Card className="col-span-1">
@@ -23,7 +26,7 @@ export function StatusPieChart({ title, data }: StatusPieChartProps) {
           <CardTitle>{title}</CardTitle>
         </CardHeader>
         <CardContent className="flex h-[300px] items-center justify-center text-muted-foreground">
-          No data available
+          {t("noData")}
         </CardContent>
       </Card>
     );
@@ -54,7 +57,7 @@ export function StatusPieChart({ title, data }: StatusPieChartProps) {
               <Tooltip
                 formatter={(value: number | undefined) => [
                   value ?? 0,
-                  "Applications",
+                  t("applications"),
                 ]}
                 contentStyle={{
                   borderRadius: "8px",

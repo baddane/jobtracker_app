@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import { getAnalyticsData } from "@/lib/analytics-service";
 import { AnalyticsStats } from "@/components/analytics/AnalyticsStats";
 import { StatusPieChart } from "@/components/analytics/StatusPieChart";
@@ -11,14 +12,16 @@ export const metadata: Metadata = {
 };
 
 export default async function AnalyticsPage() {
-  // Fetch data on the server
-  const data = await getAnalyticsData();
+  const [data, t] = await Promise.all([
+    getAnalyticsData(),
+    getTranslations("analytics"),
+  ]);
 
   return (
     <div className="flex-1 space-y-4 p-4 md:p-8 pt-6">
       <div className="flex items-center justify-between space-y-2">
         <h2 className="text-3xl font-bold tracking-tight">
-          Analytics Dashboard
+          {t("dashboard")}
         </h2>
       </div>
 
@@ -27,14 +30,14 @@ export default async function AnalyticsPage() {
 
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-7">
         {/* Weekly Activity - Takes up 4 columns on large screens */}
-        <div className="col-span-4">
+        <div className="md:col-span-1 lg:col-span-4">
           <WeeklyActivityChart data={data.weeklyActivity} />
         </div>
 
         {/* Status Distribution - Takes up 3 columns */}
-        <div className="col-span-3">
+        <div className="md:col-span-1 lg:col-span-3">
           <StatusPieChart
-            title="Application Status"
+            title={t("applicationStatus")}
             data={data.statusDistribution}
           />
         </div>
@@ -42,22 +45,21 @@ export default async function AnalyticsPage() {
 
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-7">
         {/* Work Type Distribution - Takes up 3 columns */}
-        <div className="col-span-3">
+        <div className="md:col-span-1 lg:col-span-3">
           <StatusPieChart
-            title="Work Type Preference"
+            title={t("workTypePreference")}
             data={data.workTypeDistribution}
           />
         </div>
 
         {/* Placeholder for future insights or another chart */}
-        <Card className="col-span-4">
+        <Card className="md:col-span-1 lg:col-span-4">
           <CardHeader>
-            <CardTitle>Insights (Coming Soon)</CardTitle>
+            <CardTitle>{t("insightsTitle")}</CardTitle>
           </CardHeader>
           <CardContent>
             <p className="text-muted-foreground">
-              More detailed insights about your interview performance and
-              improved salary trends will appear here.
+              {t("insightsDescription")}
             </p>
           </CardContent>
         </Card>

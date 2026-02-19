@@ -10,15 +10,17 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { useRouter } from "next/navigation";
-
-const languages = [
-  { code: "en", label: "English", flag: "🇬🇧" },
-  { code: "fr", label: "Français", flag: "🇫🇷" },
-];
+import { useTranslations } from "next-intl";
 
 export function LanguageSwitcher() {
   const router = useRouter();
   const [pendingLocale, setPendingLocale] = useState<string | null>(null);
+  const t = useTranslations();
+
+  const languages = [
+    { code: "en", label: t("settings.languageEn"), flag: "🇬🇧" },
+    { code: "fr", label: t("settings.languageFr"), flag: "🇫🇷" },
+  ];
 
   useEffect(() => {
     if (!pendingLocale) return;
@@ -31,7 +33,7 @@ export function LanguageSwitcher() {
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" size="icon" className="h-9 w-9">
           <Languages className="h-4 w-4" />
-          <span className="sr-only">Change language</span>
+          <span className="sr-only">{t("header.changeLanguage")}</span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">

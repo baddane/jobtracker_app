@@ -40,7 +40,7 @@ export function GifShowcase({ labels, alts }: GifShowcaseProps) {
               type="button"
               onClick={() => setActive(slide.id)}
               className={cn(
-                "rounded-full px-4 py-1.5 text-sm font-medium transition",
+                "rounded-full px-4 py-2 text-sm font-medium transition",
                 active === slide.id
                   ? "bg-background text-foreground shadow-sm"
                   : "text-muted-foreground hover:text-foreground"

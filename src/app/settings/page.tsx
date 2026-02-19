@@ -77,7 +77,7 @@ export default function SettingsPage() {
     if (newSource.trim() && !getAllSources().includes(newSource.trim())) {
       addCustomSource(newSource.trim());
       setNewSource("");
-      toast.success("Source added");
+      toast.success(t("settings.sourceAdded"));
     }
   };
 
@@ -88,7 +88,7 @@ export default function SettingsPage() {
     ) {
       addCustomIndustry(newIndustry.trim());
       setNewIndustry("");
-      toast.success("Industry added");
+      toast.success(t("settings.industryAdded"));
     }
   };
 
@@ -111,7 +111,7 @@ export default function SettingsPage() {
     a.click();
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
-    toast.success("Data exported successfully");
+    toast.success(t("settings.dataExported"));
   };
 
   const handleImportData = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -124,13 +124,13 @@ export default function SettingsPage() {
         const data = JSON.parse(e.target?.result as string);
         if (data.applications && data.settings) {
           // This would need to be implemented in the store
-          toast.success("Data imported successfully");
+          toast.success(t("settings.dataImported"));
           router.refresh();
         } else {
-          toast.error("Invalid backup file");
+          toast.error(t("settings.invalidBackup"));
         }
       } catch {
-        toast.error("Failed to parse backup file");
+        toast.error(t("settings.failedParse"));
       }
     };
     reader.readAsText(file);
@@ -139,7 +139,7 @@ export default function SettingsPage() {
   const handleClearAllData = () => {
     localStorage.removeItem("job-apply-track-applications");
     localStorage.removeItem("job-apply-track-settings");
-    toast.success("All data cleared");
+    toast.success(t("settings.dataCleared"));
     setShowClearDialog(false);
     router.refresh();
     window.location.reload();
@@ -162,7 +162,7 @@ export default function SettingsPage() {
         <div>
           <h1 className="text-2xl font-bold">{t("settings.title")}</h1>
           <p className="text-muted-foreground">
-            Manage your application preferences
+            {t("settings.managePreferences")}
           </p>
         </div>
 
@@ -170,7 +170,7 @@ export default function SettingsPage() {
         <Card>
           <CardHeader>
             <CardTitle>{t("settings.appearance")}</CardTitle>
-            <CardDescription>Customize how the app looks</CardDescription>
+            <CardDescription>{t("settings.customizeAppearance")}</CardDescription>
           </CardHeader>
           <CardContent className="space-y-6">
             {/* Theme */}
@@ -242,14 +242,12 @@ export default function SettingsPage() {
         <Card>
           <CardHeader>
             <CardTitle>{t("settings.customSources")}</CardTitle>
-            <CardDescription>
-              Add custom job sources for your applications
-            </CardDescription>
+            <CardDescription>{t("settings.customSourcesDesc")}</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="flex gap-2">
               <Input
-                placeholder="e.g., AngelList, Hacker News"
+                placeholder={t("settings.sourcePlaceholder")}
                 value={newSource}
                 onChange={(e) => setNewSource(e.target.value)}
                 onKeyDown={(e) => e.key === "Enter" && handleAddSource()}
@@ -273,7 +271,7 @@ export default function SettingsPage() {
                       className="h-4 w-4 hover:bg-transparent"
                       onClick={() => {
                         removeCustomSource(source);
-                        toast.success("Source removed");
+                        toast.success(t("settings.sourceRemoved"));
                       }}
                     >
                       <X className="h-3 w-3" />
@@ -289,14 +287,12 @@ export default function SettingsPage() {
         <Card>
           <CardHeader>
             <CardTitle>{t("settings.customIndustries")}</CardTitle>
-            <CardDescription>
-              Add custom industries for company categorization
-            </CardDescription>
+            <CardDescription>{t("settings.customIndustriesDesc")}</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="flex gap-2">
               <Input
-                placeholder="e.g., Blockchain, AI/ML"
+                placeholder={t("settings.industryPlaceholder")}
                 value={newIndustry}
                 onChange={(e) => setNewIndustry(e.target.value)}
                 onKeyDown={(e) => e.key === "Enter" && handleAddIndustry()}
@@ -320,7 +316,7 @@ export default function SettingsPage() {
                       className="h-4 w-4 hover:bg-transparent"
                       onClick={() => {
                         removeCustomIndustry(industry);
-                        toast.success("Industry removed");
+                        toast.success(t("settings.industryRemoved"));
                       }}
                     >
                       <X className="h-3 w-3" />
@@ -336,9 +332,7 @@ export default function SettingsPage() {
         <Card>
           <CardHeader>
             <CardTitle>{t("settings.dataManagement")}</CardTitle>
-            <CardDescription>
-              Export, import, or clear your data
-            </CardDescription>
+            <CardDescription>{t("settings.dataManagementDesc")}</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="flex flex-wrap gap-2">
@@ -368,10 +362,10 @@ export default function SettingsPage() {
                 onClick={() => setShowClearDialog(true)}
               >
                 <Trash2 className="mr-2 h-4 w-4" />
-                Clear All Data
+                {t("settings.clearAllData")}
               </Button>
               <p className="text-sm text-muted-foreground mt-2">
-                This will permanently delete all your applications and settings.
+                {t("settings.clearAllDataWarning")}
               </p>
             </div>
           </CardContent>
@@ -380,10 +374,9 @@ export default function SettingsPage() {
         <AlertDialog open={showClearDialog} onOpenChange={setShowClearDialog}>
           <AlertDialogContent>
             <AlertDialogHeader>
-              <AlertDialogTitle>Clear All Data</AlertDialogTitle>
+              <AlertDialogTitle>{t("settings.clearAllData")}</AlertDialogTitle>
               <AlertDialogDescription>
-                Are you sure you want to delete all your applications and
-                settings? This action cannot be undone.
+                {t("settings.clearAllDataConfirm")}
               </AlertDialogDescription>
             </AlertDialogHeader>
             <AlertDialogFooter>
@@ -392,7 +385,7 @@ export default function SettingsPage() {
                 onClick={handleClearAllData}
                 className="bg-destructive text-destructive-foreground hover:bg-destructive/90"
               >
-                Clear All Data
+                {t("settings.clearAllData")}
               </AlertDialogAction>
             </AlertDialogFooter>
           </AlertDialogContent>
@@ -401,15 +394,12 @@ export default function SettingsPage() {
         {/* About Section */}
         <Card>
           <CardHeader>
-            <CardTitle>About Jobio</CardTitle>
-            <CardDescription>
-              A modern job application tracking tool
-            </CardDescription>
+            <CardTitle>{t("settings.aboutTitle")}</CardTitle>
+            <CardDescription>{t("settings.aboutDescription")}</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
             <p className="text-sm text-muted-foreground">
-              Jobio helps you organize and track your job applications in one
-              place. Built with Next.js, Supabase, and shadcn/ui.
+              {t("settings.aboutText")}
             </p>
             <div className="flex flex-wrap gap-3">
               <a

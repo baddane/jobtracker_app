@@ -368,8 +368,8 @@ export function ApplicationForm({
             </h1>
             <p className="text-muted-foreground text-sm">
               {isEditing
-                ? "Update the application details"
-                : "Track a new job application"}
+                ? t("application.formSubtitleEdit")
+                : t("application.formSubtitleNew")}
             </p>
           </div>
         </div>
@@ -434,7 +434,7 @@ export function ApplicationForm({
         {/* Company Information */}
         <Card>
           <CardHeader>
-            <CardTitle className="text-lg">Company Information</CardTitle>
+            <CardTitle className="text-lg">{t("application.sectionCompany")}</CardTitle>
           </CardHeader>
           <CardContent className="grid gap-4 sm:grid-cols-2">
             <div className="space-y-2">
@@ -446,7 +446,7 @@ export function ApplicationForm({
                 {...register("companyName", {
                   required: t("validation.required"),
                 })}
-                placeholder="e.g., Google"
+                placeholder={t("application.placeholderCompany")}
               />
               {errors.companyName && (
                 <p className="text-sm text-destructive">
@@ -464,7 +464,7 @@ export function ApplicationForm({
                 {...register("companyLocation", {
                   required: t("validation.required"),
                 })}
-                placeholder="e.g., San Francisco, CA"
+                placeholder={t("application.placeholderLocation")}
               />
               {errors.companyLocation && (
                 <p className="text-sm text-destructive">
@@ -482,7 +482,7 @@ export function ApplicationForm({
                 onValueChange={(value) => setValue("companyIndustry", value)}
               >
                 <SelectTrigger>
-                  <SelectValue placeholder="Select industry" />
+                  <SelectValue placeholder={t("application.placeholderSelectIndustry")} />
                 </SelectTrigger>
                 <SelectContent>
                   {industries.map((industry) => (
@@ -501,7 +501,7 @@ export function ApplicationForm({
               <Input
                 id="jobPostingUrl"
                 {...register("jobPostingUrl")}
-                placeholder="linkedin.com/jobs/..."
+                placeholder={t("application.placeholderJobUrl")}
               />
             </div>
           </CardContent>
@@ -510,7 +510,7 @@ export function ApplicationForm({
         {/* Position Information */}
         <Card>
           <CardHeader>
-            <CardTitle className="text-lg">Position Details</CardTitle>
+            <CardTitle className="text-lg">{t("application.sectionPosition")}</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="grid gap-4 sm:grid-cols-2">
@@ -521,7 +521,7 @@ export function ApplicationForm({
                   {...register("position", {
                     required: t("validation.required"),
                   })}
-                  placeholder="e.g., Senior Frontend Engineer"
+                  placeholder={t("application.placeholderPosition")}
                 />
                 {errors.position && (
                   <p className="text-sm text-destructive">
@@ -534,13 +534,13 @@ export function ApplicationForm({
                 <Label htmlFor="salaryExpectation">
                   {t("application.salaryExpectation")} ({t("common.optional")})
                 </Label>
-                <div className="grid grid-cols-[96px_minmax(0,1fr)_minmax(0,1fr)] gap-2">
+                <div className="grid grid-cols-1 sm:grid-cols-[96px_minmax(0,1fr)_minmax(0,1fr)] gap-2">
                   <Select
                     value={salaryExpectationCurrency}
                     onValueChange={setSalaryExpectationCurrency}
                   >
                     <SelectTrigger className="w-full">
-                      <SelectValue placeholder="Currency" />
+                      <SelectValue placeholder={t("application.placeholderCurrency")} />
                     </SelectTrigger>
                     <SelectContent>
                       {currencyOptions.map((currency) => (
@@ -556,7 +556,7 @@ export function ApplicationForm({
                     min="0"
                     step="1"
                     inputMode="numeric"
-                    placeholder="Amount"
+                    placeholder={t("application.placeholderAmount")}
                     className="min-w-0"
                     value={salaryExpectationAmount}
                     onChange={(event) =>
@@ -581,7 +581,7 @@ export function ApplicationForm({
                       )}
                     >
                       <CalendarIcon className="mr-2 h-4 w-4 shrink-0" />
-                      {date ? format(date, "PP") : <span>Pick a date</span>}
+                      {date ? format(date, "PP") : <span>{t("application.placeholderPickDate")}</span>}
                     </Button>
                   </PopoverTrigger>
                   <PopoverContent className="w-auto p-0" align="start">
@@ -612,7 +612,7 @@ export function ApplicationForm({
                   }
                 >
                   <SelectTrigger className="w-full">
-                    <SelectValue placeholder="Select work type" />
+                    <SelectValue placeholder={t("application.placeholderSelectWorkType")} />
                   </SelectTrigger>
                   <SelectContent>
                     {(Object.keys(WORK_TYPE_CONFIG) as WorkType[]).map(
@@ -716,7 +716,7 @@ export function ApplicationForm({
                   onValueChange={(value) => setValue("source", value)}
                 >
                   <SelectTrigger className="w-full">
-                    <SelectValue placeholder="Select source" />
+                    <SelectValue placeholder={t("application.placeholderSelectSource")} />
                   </SelectTrigger>
                   <SelectContent>
                     {sources.map((source) => (
@@ -782,7 +782,7 @@ export function ApplicationForm({
           <CardContent>
             <Textarea
               {...register("notes")}
-              placeholder="Any additional notes about this application..."
+              placeholder={t("application.placeholderNotes")}
               rows={4}
             />
           </CardContent>
@@ -803,7 +803,7 @@ export function ApplicationForm({
               <Textarea
                 id="coverLetter"
                 {...register("coverLetter")}
-                placeholder="Paste your cover letter here..."
+                placeholder={t("application.placeholderCoverLetter")}
                 rows={6}
               />
             </div>
@@ -830,7 +830,7 @@ export function ApplicationForm({
                   {fields.map((field, index) => (
                     <div key={field.id} className="border rounded-lg p-4 space-y-4">
                       <div className="flex items-center justify-between">
-                        <span className="font-medium">Contact {index + 1}</span>
+                        <span className="font-medium">{t("application.contact")} {index + 1}</span>
                         <Button
                           type="button"
                           variant="ghost"
@@ -845,14 +845,14 @@ export function ApplicationForm({
                           <Label>{t("application.contactName")}</Label>
                           <Input
                             {...register(`contacts.${index}.name`)}
-                            placeholder="e.g., John Doe"
+                            placeholder={t("application.placeholderContactName")}
                           />
                         </div>
                         <div className="space-y-2">
                           <Label>{t("application.contactRole")}</Label>
                           <Input
                             {...register(`contacts.${index}.role`)}
-                            placeholder="e.g., Recruiter"
+                            placeholder={t("application.placeholderContactRole")}
                           />
                         </div>
                         <div className="space-y-2">
@@ -860,28 +860,28 @@ export function ApplicationForm({
                           <Input
                             type="email"
                             {...register(`contacts.${index}.email`)}
-                            placeholder="email@example.com"
+                            placeholder={t("application.placeholderContactEmail")}
                           />
                         </div>
                         <div className="space-y-2">
                           <Label>{t("application.contactPhone")}</Label>
                           <Input
                             {...register(`contacts.${index}.phone`)}
-                            placeholder="+1 234 567 8900"
+                            placeholder={t("application.placeholderContactPhone")}
                           />
                         </div>
                         <div className="space-y-2 sm:col-span-2">
                           <Label>{t("application.contactLinkedIn")}</Label>
                           <Input
                             {...register(`contacts.${index}.linkedin`)}
-                            placeholder="https://linkedin.com/in/..."
+                            placeholder={t("application.placeholderContactLinkedin")}
                           />
                         </div>
                         <div className="space-y-2 sm:col-span-2">
                           <Label>{t("application.contactNotes")}</Label>
                           <Textarea
                             {...register(`contacts.${index}.notes`)}
-                            placeholder="Any notes about this contact..."
+                            placeholder={t("application.placeholderContactNotes")}
                             rows={2}
                           />
                         </div>
