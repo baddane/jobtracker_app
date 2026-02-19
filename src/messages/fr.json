@@ -212,19 +212,19 @@
     "ctaPrimary": "Commencer",
     "ctaSecondary": "Comment ça marche",
     "highlights": {
-      "pipeline": "Entonnoir en 8 étapes",
-      "filters": "Filtres en temps réel",
+      "pipeline": "Analytique de l'entonnoir",
+      "filters": "Gestion des CV",
       "theme": "Mode clair + sombre"
     },
     "heroAlt": "Aperçu du tableau de bord Jobio",
     "preview": {
       "tabs": {
-        "kanban": "Kanban",
-        "detail": "Détail"
+        "kanban": "Kanban & Listes",
+        "detail": "Analytics"
       },
       "alts": {
-        "kanban": "Vue Kanban avec cartes glissantes",
-        "detail": "Vue détail avec CV et chronologie"
+        "kanban": "Vue Kanban pour suivre facilement les candidatures",
+        "detail": "Tableau de bord Analytics montrant les taux de réponse et les graphiques"
       }
     },
     "features": {
@@ -246,6 +246,11 @@
       }
     },
     "sections": {
+      "analytics": {
+        "title": "Recherche d'emploi pilotée par les données",
+        "description": "Arrêtez de supposer. Voyez exactement comment vos candidatures se portent.",
+        "bullets": "Taux de réponse en temps réel|Graphiques d'activité hebdomadaire|Distribution des candidatures|Analyse par type de travail"
+      },
       "commandCenter": {
         "title": "Tout centralisé",
         "description": "Filtrez par statut, source ou type de travail. Épinglez les candidatures importantes.",

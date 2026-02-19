@@ -212,19 +212,19 @@
     "ctaPrimary": "Hemen başla",
     "ctaSecondary": "Nasıl çalışır",
     "highlights": {
-      "pipeline": "8 aşamalı işe alım akışı",
-      "filters": "Gerçek zamanlı filtreler",
+      "pipeline": "Huni Analitiği",
+      "filters": "CV Yönetimi",
       "theme": "Koyu + açık mod"
     },
     "heroAlt": "Jobio panel ön izlemesi",
     "preview": {
       "tabs": {
-        "kanban": "Kanban",
-        "detail": "Detay"
+        "kanban": "Kanban & Listeler",
+        "detail": "Analitik"
       },
       "alts": {
-        "kanban": "Sürükle-bırak kartlarla kanban görünümü",
-        "detail": "CV ve zaman çizelgesi olan başvuru detay görünümü"
+        "kanban": "Başvuruları kolayca takip etmek için Kanban görünümü",
+        "detail": "Yanıt oranları ve grafikler gösteren Analitik panosu"
       }
     },
     "features": {
@@ -246,6 +246,11 @@
       }
     },
     "sections": {
+      "analytics": {
+        "title": "Veri Odaklı İş Arama",
+        "description": "Tahmin etmeyi bırakın. Başvurularınızın tam olarak nasıl performans gösterdiğini görün.",
+        "bullets": "Gerçek Zamanlı Yanıt Oranı|Haftalık Aktivite Grafikleri|Başvuru Dağılımı|Çalışma Tipi Analizi"
+      },
       "commandCenter": {
         "title": "Tüm kontrol tek merkezde",
         "description": "Durum, kaynak ya da çalışma tipine göre filtreleyin. Önemli başvuruları sabitleyin.",
