@@ -6,6 +6,8 @@ import { StatusPieChart } from "@/components/analytics/StatusPieChart";
 import { WeeklyActivityChart } from "@/components/analytics/WeeklyActivityChart";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: "Analytics | Jobio",
   description: "View insights about your job search progress",
